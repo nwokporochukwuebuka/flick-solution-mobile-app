@@ -84,6 +84,7 @@ const TempSignIn: React.FC<{navigation: any; route: any}> = ({
         email,
       );
     } else {
+      console.log('======= I used passcode typing ========');
       deviceRegistration = await loginDevice(getDeviceId(), values.passcode);
     }
     if (deviceRegistration.status !== 200) {

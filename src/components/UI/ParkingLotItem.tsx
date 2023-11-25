@@ -23,6 +23,7 @@ const ParkingLotItem: React.FC<{item: any; navigation: any}> = ({
         flexDirection: 'row',
         backgroundColor: '#e5e8ee',
         paddingVertical: 15,
+        borderRadius: 10,
       }}
       onPress={() => navigation.navigate('ParkingLotDetail', {item})}>
       <View style={{paddingRight: width * 0.05}}>
@@ -30,6 +31,7 @@ const ParkingLotItem: React.FC<{item: any; navigation: any}> = ({
           source={{uri: item.imgUrl}}
           height={width * 0.15}
           width={width * 0.15}
+          style={{borderRadius: 10}}
         />
       </View>
       <View>
